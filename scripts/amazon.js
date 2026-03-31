@@ -1,4 +1,4 @@
-console.log('hello');
+import {cart} from '../data/cart.js';
 
 let productsHTML = ``;
 
@@ -93,6 +93,8 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
       cartQuantity += item.quantity;
 
     });
+
+    console.log(cart);
 
     document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 
